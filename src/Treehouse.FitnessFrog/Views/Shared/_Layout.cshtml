@@ -1,18 +1,18 @@
-﻿@{ 
+﻿@{
     var applicationName = "Fitness Frog";
 }
 
 @helper GetAddEntryButtonVisibility()
-{
-    if ((string)ViewContext.RouteData.Values["controller"] == "Entries" && 
-        (string)ViewContext.RouteData.Values["action"] == "Add")
     {
-        <text>hidden</text>
-    }
-    else
-    {
-        <text>visible</text>
-    }
+        if ((string)ViewContext.RouteData.Values["controller"] == "Entries" &&
+            (string)ViewContext.RouteData.Values["action"] == "Add")
+        {
+            <text>hidden</text>
+        }
+        else
+        {
+            <text>visible</text>
+        }
 }
 
 <!DOCTYPE html>
